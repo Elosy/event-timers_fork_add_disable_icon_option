@@ -65,7 +65,8 @@ fn load() {
     check_for_event_tracks_update();
     
     // Setup Quick Access icon
-    setup_quick_access();
+    if (settings.show_quick_access_icon)
+        setup_quick_access();
     
     register_keybind_with_string("Toggle Event Timers", toggle_window_keybind, "ALT+E")
         .revert_on_unload();

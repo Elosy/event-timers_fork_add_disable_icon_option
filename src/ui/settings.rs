@@ -241,6 +241,7 @@ pub fn render_settings(ui: &Ui) {
         ui.text("Other");
         ui.checkbox("Close window with ESC", &mut config.close_on_escape);
         ui.checkbox("Include event name when copying waypoint", &mut config.copy_with_event_name);
+        ui.checkbox("Show quick access icon", &mut config.show_quick_access_icon);
 
         ui.unindent();
     }
